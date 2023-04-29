@@ -6,33 +6,58 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Combined Game</title>
+    <title>📚 シノッ　カンピソㇱ</title>
 </head>
 <body>
-    <div id="start-page">
-        <p>ポンノ　ホㇱキ　ヤン。</p>
-        <p>3秒後に画面が切り替わります。</p>
-    </div>
-
-    <div id="home" style="display:none;">
+    <div id="controls">
+        <!-- Home button -->
         <a href="javascript:void(0)" onclick="showSection('home')" class="home-icon">
             <span class="material-icons">home</span>
             <div class="tooltip-text">チセ</div>
         </a>
-        <h1>シノッ　カンピソㇱ</h1>
+
+        <!-- Radio button for character setting -->
+        <input type="radio" id="kana" name="character" value="kana" checked>
+        <label for="kana">アイヌイタㇰ</label>
+        <input type="radio" id="roman" name="character" value="roman">
+        <label for="roman">Aynuitak</label>
+
+        <!-- Checkbox for jpn translation -->
+        <input type="checkbox" id="tips" name="tips">
+        <label for="tips">日本語</label>
+    </div>
+
+    <!-- Start page (fade in to home within 3 sec) -->
+    <div id="start-page">
+        <p>ポンノ　ホㇱキ　ヤン...</p>
+        <p>Ponno hoski yan...</p>  
+        <p>3秒後に画面が切り替わります。</p>
+    </div>
+
+    <!-- HOME -->
+    <div id="home" style="display:none;">
+        <h1 class="description" data-key="title"></h1>
+
         <div class="container">
-            <p>ネイタ　エオマン？</p>
-            <button id="option1" onclick="showSection('1a')">リㇰ</button>
-            <button id="option2" onclick="showSection('1b')">ノㇱキ</button>
-            <button id="option3" onclick="showSection('1c')">ラ</button>
+            <p class="description" data-key="qst_1"></p>
+            <div class="tip">どこに行きますか？</div></br>
+
+            <button id="option1" onclick="showSection('1a')">
+                <div class="description" data-key="opt_1a"></div>
+                <div class="tip">上</div>
+            </button>
+            <button id="option2" onclick="showSection('1b')">
+                <div class="description" data-key="opt_1b"></div>
+                <div class="tip">まっすぐ</div>
+            </button>
+            <button id="option3" onclick="showSection('1c')">
+                <div class="description" data-key="opt_1c"></div>
+                <div class="tip">下</div>
+            </button>
         </div>
     </div>
 
     <div id="1a" style="display:none;">
-        <a href="javascript:void(0)" onclick="showSection('home')" class="home-icon">
-            <span class="material-icons">home</span>
-            <div class="tooltip-text">チセ</div>
-        </a>
         <div class="container">
             <p>リㇰ　タ　ニㇱクㇽ　アン。</p>
             <button onclick="showSection('2-1a')">トゥタヌノ　パイェアン。</button>
@@ -40,10 +65,6 @@
     </div>
 
     <div id="1b" style="display:none;">
-        <a href="javascript:void(0)" onclick="showSection('home')" class="home-icon">
-            <span class="material-icons">home</span>
-            <div class="tooltip-text">チセ</div>
-        </a>
         <div class="container">
             <p>ノㇱキ　タ　アイヌ　アン。</p>
             <button onclick="showSection('fin')">パㇰノ　カ！</button>
@@ -51,10 +72,6 @@
     </div>
 
     <div id="1c" style="display:none;">
-        <a href="javascript:void(0)" onclick="showSection('home')" class="home-icon">
-            <span class="material-icons">home</span>
-            <div class="tooltip-text">チセ</div>
-        </a>
         <div class="container">
             <p>ラ　タ　ノンノ　アン。</p>
             <button onclick="showSection('fin')">パㇰノ　カ！</button>
@@ -62,11 +79,6 @@
     </div>
 
     <div id="2-1a" style="display:none;">
-        <a href="javascript:void(0)" onclick="showSection('home')" class="home-icon">
-            <span class="material-icons">home</span>
-            <div class="tooltip-text">チセ</div>
-        </a>
-        <h1>2-1a</h1>
         <div class="container">
             <p>トゥタヌノ　ネイタ　エオマン？</p>
             <button id="option1" onclick="showSection('fin')">1</button>
@@ -76,16 +88,32 @@
     </div>
 
     <div id="fin" style="display:none;">
-        <a href="javascript:void(0)" onclick="showSection('home')" class="home-icon">
-            <span class="material-icons">home</span>
-            <div class="tooltip-text">チセ</div>
-        </a>
         <div class="container">
             <p>イヤイライケレ！</p>
             <button onclick="showSection('home')">チセ　アコホシピ。</button>
         </div>
     </div>
 
+    <script>
+        const translations = {
+            'kana': {
+                'title': '📚 シノッ　カンピソㇱ',
+                'qst_1': 'ネイタ　エオマン？',
+                'opt_1a': 'リㇰ',
+                'opt_1b': 'ノㇱキ',
+                'opt_1c': 'ラ',
+                // Add more translations here
+            },
+            'roman': {
+                'title': '📚 Sinot Kampisos',
+                'qst_1': 'neyta e=oman?',
+                'opt_1a': 'rik',
+                'opt_1b': 'noski',
+                'opt_1c': 'ra',
+                // Add more translations here
+            }
+        };
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
