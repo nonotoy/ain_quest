@@ -62,31 +62,36 @@ button:hover {
 .home-icon {
     position: fixed;
     top: 10px;
-    left: 10px;
-    font-size: 18px;
+    left: 30px;
+    font-size: 12px;
     text-decoration: none;
-    color: #0000FF;
+    /* color: #0000FF; */
     z-index: 1000;
     display: inline-block;
+    
 }
 
 .tooltip-text {
     visibility: hidden;
-    min-width: 200px;
-    background-color: #0000FF;
-    color: #fff;
+    min-width: 50px;
+    background-color: #ffffff00;
+    color: #000000;
+    border-color: #000000;
+    border-width: 1px;
     text-align: center;
     border-radius: 6px;
     padding: 5px;
     position: absolute;
     z-index: 1001;
-    top: 50%;
-    left: 100%;
+    top: 150%;
+    left: 0%;
     transform: translateY(-50%);
-    margin-left: 10px;
+    margin-left: -15px;
     opacity: 0;
     transition: opacity 0.3s;
+    font-size: medium;
 }
+
 
 .home-icon:hover .tooltip-text {
     visibility: visible;

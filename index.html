@@ -12,19 +12,24 @@
     <div id="controls">
         <!-- Home button -->
         <a href="javascript:void(0)" onclick="showSection('home')" class="home-icon">
-            <span class="material-icons">home</span>
+            <span>
+                <img src="materials/home.svg" alt="Cise" style="width: 30px; height: 30px;">
+            </span>
             <div class="tooltip-text">チセ</div>
         </a>
 
-        <!-- Radio button for character setting -->
-        <input type="radio" id="kana" name="character" value="kana" checked>
-        <label for="kana">アイヌイタㇰ</label>
-        <input type="radio" id="roman" name="character" value="roman">
-        <label for="roman">Aynuitak</label>
-
-        <!-- Checkbox for jpn translation -->
-        <input type="checkbox" id="tips" name="tips">
-        <label for="tips">日本語</label>
+        <div id="controls">
+            <!-- Radio button for character setting -->
+            <input type="radio" id="kana" name="character" value="kana" checked>
+            <label for="kana">アイヌイタㇰ</label>
+            <input type="radio" id="roman" name="character" value="roman">
+            <label for="roman">Aynuitak</label>
+        
+            <!-- Checkbox for jpn translation -->
+            <input type="checkbox" id="tips" name="tips">
+            <label for="tips">日本語</label>
+        </div>
+    </span>
     </div>
 
     <!-- Start page (fade in to home within 3 sec) -->

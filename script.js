@@ -54,6 +54,7 @@ function updateDescription(lang) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const languageButtons = document.getElementsByName('character');
+
     languageButtons.forEach((button) => {
         button.addEventListener('change', (event) => {
             updateDescription(event.target.value);
@@ -61,6 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     updateDescription('kana'); // Set default
+
+    addGifHoverEffect();
 });
 
 document.getElementById("tips").addEventListener("change", toggleTips);
