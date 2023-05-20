@@ -1,5 +1,5 @@
 function showSection(sectionId) {
-    const allSections = document.querySelectorAll("[id^='start-page'], [id^='home'], [id^='1'], [id^='2'],[id^='fin']");
+    const allSections = document.querySelectorAll(".section");
     const controls = document.getElementById("controls");
     const tips = document.querySelectorAll('.tip');
 
@@ -16,12 +16,12 @@ function showSection(sectionId) {
             for (let i = 0; i < tips.length; i++) {
                 tips[i].style.display = tipsVisible ? "block" : "none";
             }
-
         } else {
             section.style.display = "none";
         }
     }
 }
+
 
 $(document).ready(function () {
     const startPage = $("#start-page");
