@@ -126,7 +126,7 @@ const translations = {
         'qst_1a': 'rik ta niskur an.',
 
         'next': 'etokta paye=an.',
-        'returnToHome': 'e=sinot= okere ya?',
+        'returnToHome': 'e=sinot okere ya?',
         'appr': 'iyayraykere!',    
         'home': 'cise a=kohosipi.',      
     },
