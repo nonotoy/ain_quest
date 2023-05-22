@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- link rel="icon" href="favicon.ico" -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>📚 シノッ　カンピソㇱ</title>
 </head>
@@ -69,11 +70,10 @@
 
     <div id="1a" class="section" style="display:none;">
         <div class="container">
-
             <!-- Messages -->
             <div class="msgs">
                 <div class="description" data-key="qst_1a"></div>
-                <div class="tip">上には雲があります。</div>
+                <div class="tip" data-key="qst_1a-tip"></div>
             </div>
 
             <!-- Image -->
@@ -89,30 +89,66 @@
                     <div class="tip" data-key="returnToHome-tip"></div>
                 </button>
             </div>
-
         </div>
     </div>
 
     <div id="1b" class="section" style="display:none;">
         <div class="container">
-            <p>ノㇱキ　タ　アイヌ　アン。</p>
-            <button onclick="showSection('fin')">パㇰノ　カ！</button>
+            <!-- Messages -->
+            <div class="msgs">
+                <div class="description" data-key="qst_1b"></div>
+                <div class="tip" data-key="qst_1b-tip"></div>
+            </div>
+
+            <!-- Image -->
+            
+            <!-- Option -->
+            <div class="button-container">
+                <button id="option1" onclick="showSection('fin')">
+                    <div class="description" data-key="done"></div>
+                    <div class="tip" data-key="done-tip"></div>
+                </button>
+            </div>
         </div>
     </div>
 
     <div id="1c" class="section" style="display:none;">
         <div class="container">
-            <p>ラ　タ　ノンノ　アン。</p>
-            <button onclick="showSection('fin')">パㇰノ　カ！</button>
+            <!-- Messages -->
+            <div class="msgs">
+                <div class="description" data-key="qst_1c"></div>
+                <div class="tip" data-key="qst_1c-tip"></div>
+            </div>
+
+            <!-- Image -->
+            
+            <!-- Option -->
+            <div class="button-container">
+                <button id="option1" onclick="showSection('fin')">
+                    <div class="description" data-key="done"></div>
+                    <div class="tip" data-key="done-tip"></div>
+                </button>
+            </div>
         </div>
     </div>
 
     <div id="2-1a" class="section" style="display:none;">
         <div class="container">
-            <p>トゥタヌノ　ネイタ　エオマン？</p>
-            <button id="option1" onclick="showSection('fin')">1</button>
-            <button id="option2" onclick="showSection('fin')">2</button>
-            <button id="option3" onclick="showSection('fin')">3</button>
+            <!-- Messages -->
+            <div class="msgs">
+                <div class="description" data-key="qst_4"></div>
+                <div class="tip" data-key="qst_4-tip"></div>
+            </div>
+
+            <!-- Image -->
+            
+            <!-- Option -->
+            <div class="button-container">
+                <button id="option1" onclick="showSection('fin')">
+                    <div class="description" data-key="done"></div>
+                    <div class="tip" data-key="done-tip"></div>
+                </button>
+            </div>
         </div>
     </div>
 

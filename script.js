@@ -109,9 +109,14 @@ const translations = {
         'opt_1c': 'ラ',
 
         'qst_1a': 'リㇰ　タ　ニㇱクㇽ　アン。',
+        'qst_1b': 'ノㇱキ　タ　アイヌ　アン。',
+        'qst_1c': 'ラ　タ　ノンノ　アン。',
+
+        'qst_4': 'トゥタヌノ　ネイタ　エオマン？',
 
         'next': 'エトㇰタ　パイェアン。',
         'returnToHome': 'エ＝シノッ　オケレ　ヤ？',
+        'done': 'パㇰノカ！',
         'appr': 'イヤイライケレ！',  
         'home': 'チセ　アコホシピ。',
     },
@@ -124,9 +129,14 @@ const translations = {
         'opt_1c': 'ra',
 
         'qst_1a': 'rik ta niskur an.',
+        'qst_1b': 'noski ta aynu an.',
+        'qst_1c': 'ra ta nonno an.',
+
+        'qst_4': 'tutanuno neyta e=oman?',
 
         'next': 'etokta paye=an.',
         'returnToHome': 'e=sinot okere ya?',
+        'done': 'pakno ka!',
         'appr': 'iyayraykere!',    
         'home': 'cise a=kohosipi.',      
     },
@@ -136,8 +146,15 @@ const translations = {
         'opt_1b-tip': '真ん中',
         'opt_1c-tip': '下',  
 
+        'qst_1a-tip': '上には雲があります。',
+        'qst_1b-tip': '真ん中には人がいます。',
+        'qst_1c-tip': '下には花があります。',
+
+        'qst_4-tip': '次はどこに行きますか？',
+
         'next-tip': '先に進む',
         'returnToHome-tip': '終わりにしますか？',
+        'done-tip': 'おしまい！',
         'appr-tip': 'ありがとう！',
         'home-tip': '最初に戻る',
     }
