@@ -30,7 +30,6 @@
   margin: 0;
 }
 
-
 .header-link {
   text-decoration: none;
 }
@@ -64,6 +63,7 @@ body {
 
 /* Start page */
 #start-page {
+  font-size: 1.8em;
   display: flex;
   flex-direction: column;
   justify-content: center;
